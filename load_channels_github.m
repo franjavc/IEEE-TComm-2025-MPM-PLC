@@ -14,7 +14,7 @@
 % It also generates 3 figures for each of the channels:
 % - Amplitude of the frequency response
 % - Phase of the frequency response
-% - the normalized average RMS value of the fitting error
+% - the normalized RMS value of the fitting error
 
 clear;
 close all;
@@ -79,6 +79,6 @@ for i=1:length(nom_fic_mpm_ajuste)
     % Plot the normalized RMS value of the fitting error
     figure(ind_fig); ind_fig = ind_fig + 1;
     plot(NRMSE_dB);hold on;grid on;
-    xlabel('Number of decimated paths');ylabel('Average NRMSE (dB)')   
+    xlabel('Number of decimated paths');ylabel('NRMSE (dB)')   
 end
 

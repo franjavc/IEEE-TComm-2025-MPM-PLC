@@ -11,7 +11,7 @@ Authors: José A. Cortés, Alberto Pittolo, Irene Povedano, Francisco J. Cañete
 
 This repository contains datasets and MATLAB scripts to generate some PLC channel responses and curves in the paper:
 
-📄 “A Close Examination of the Multipath Propagation Stochastic Model for Communications over Power Lines,” submitted to **IEEE Transactions on Communications, 2025.
+📄 “A Close Examination of the Multipath Propagation Stochastic Model for Communications over Power Lines,” submitted to IEEE Transactions on Communications, 2025.
 
 📌 DOI:
 
@@ -30,7 +30,7 @@ In addition to the frequency responses, for each of the channels, their multipat
 It also generates 3 figures for each of the channels:
  - Amplitude of the frequency response
  - Phase of the frequency response
- - the normalized average RMS value of the fitting error (NRMSE in dB)
+ - the normalized root mean square value of the fitting error (NRMSE in dB)
 
 📜 These materials are provided for reproducibility of the results in our paper. Readers are encouraged to utilize them under the terms of the journal and this respository's license.
 

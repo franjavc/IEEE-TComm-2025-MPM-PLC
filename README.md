@@ -6,7 +6,6 @@ Submitted to IEEE Transactions on Communications, 2025.
 --
 
 Authors: José A. Cortés, Alberto Pittolo, Irene Povedano, Francisco J. Cañete and Andrea M. Tonello. 
---
 
 ## Overview
 
@@ -21,8 +20,12 @@ The MATLAB script "load_channels_github.m" provides the frequency responses for 
  - the one with a medium value of $N$ 
  - the one with minimum value of $N$ 
 
-In addition to the frequency responses, for each of the channels, the multipath model parameters are provided:
-the attenuation coefficients $a_0$ and $a_1$; the normalization coefficient $A$; the number of dominant paths $N$; the path gains $g_i$; and the path lenghts $d_i$.
+In addition to the frequency responses, for each of the channels, their multipath model parameters are provided:
+- $a_0$ and $a_1$, attenuation coefficients
+- $A$, normalization coefficient
+- $N$, number of dominant paths 
+- $g_i$, path gains
+- $d_i$, path lenghts.
 
 It also generates 3 figures for each of the channels:
  - Amplitude of the frequency response

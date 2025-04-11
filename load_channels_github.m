@@ -1,13 +1,17 @@
+% This MATLAB script corresponds to a dataset of the paper submitted to
+% IEEE Transactions on Communications:
 % "A Close Examination of the Multipath Propagation Stochastic Model for 
-%   Communications over Power Lines"
-% that provides the channels frequency response for three measured channels and
+%   Communications over Power Lines" 
+% by Cortes, Pittolo, Povedano, Cañete, and Tonello. 
+% 
+% It provides the channels frequency response for three measured channels and
 % their fitting parameters (according to Fig.1 in the paper):
 % - the one with the highest 𝑁 (number of paths) after the decimation process, 
 % - the one with a medium value of 𝑁 
 % - the one with minimum value of 𝑁 
 %
 % The MAT files must be located in the directory .\data
-% Generates also 3 figures for each of the channels:
+% It also generates 3 figures for each of the channels:
 % - Amplitude of the frequency response
 % - Phase of the frequency response
 % - the normalized average RMS value of the fitting error

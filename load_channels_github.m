@@ -1,7 +1,17 @@
 % Script to load the mat files containing the dataset for the paper
-% "A Close Examination of the Multipath Propagation Stochastic Model for Communications over Power Lines"
-% The MAT files must be located in the directory .\github
-% provides the channels frequency response for three measured channels and their fitting parameters.
+% "A Close Examination of the Multipath Propagation Stochastic Model for 
+%   Communications over Power Lines"
+% that provides the channels frequency response for three measured channels and
+% their fitting parameters (according to Fig.1 in the paper):
+% - the one with the highest 𝑁 (number of paths) after the decimation process, 
+% - the one with a medium value of 𝑁 
+% - the one with minimum value of 𝑁 
+%
+% The MAT files must be located in the directory .\data
+% Generates also 3 figures for each of the channels:
+% - Amplitude of the frequency response
+% - Phase of the frequency response
+% - the normalized average RMS value of the fitting error
 
 clear;
 close all;
@@ -19,7 +29,7 @@ N_init=2554; % initial value of N (number of pahts)
 ind_fig=1;
 for i=1:length(filename_mpm_fitting)
     
-    ajuste_mpm=load(['.\github\',filename_mpm_fitting{i}]);
+    ajuste_mpm=load(['.\data\',filename_mpm_fitting{i}]);
     M=length(ajuste_mpm.fm);
     fm=ajuste_mpm.fm;
     N=ajuste_mpm.N;
@@ -38,7 +48,9 @@ for i=1:length(filename_mpm_fitting)
     for ind=1:num_iter_diezm 
         P= exp(-(a0+a1*repmat(fm.',1,N(ind))).*repmat(di{ind},M,1)).*exp(-1j*2*pi*repmat(fm.',1,N(ind)).*repmat(di{ind},M,1)/v);
         H_mpm= A(ind)*P*gi{ind};
-
+        if ind==10 
+            break 
+        end
         num = abs(H_measured-H_mpm).^2;
         denom_1 = 1./abs(H_measured).^2;
         NRMSE_dB(ind) = 10*log10((1/M)*num.'*denom_1);
@@ -51,6 +63,7 @@ for i=1:length(filename_mpm_fitting)
     plot(fm*1e-6,20*log10(abs(H_mpm)));grid on;hold on;
     xlabel('Frequency (MHz)');ylabel('|H(f)| (dB)');
 
+    % Plot the channels frequency response phase and the modelled ones
     figure(ind_fig); ind_fig = ind_fig + 1;
     plot(fm*1e-6,unwrap(angle(H_measured)));grid on;hold on;
     plot(fm*1e-6,unwrap(angle(H_mpm)));grid on;

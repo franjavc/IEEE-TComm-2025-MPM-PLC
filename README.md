@@ -17,14 +17,19 @@ This repository contains datasets and MATLAB scripts to generate some PLC channe
 📌 DOI:
 
 The MATLAB script "load_channels_github.m" provides the frequency responses for three measured channels and their fitting parameters (according to Fig.1 in the paper):
- - the one with the highest 𝑁 (number of paths) after the decimation process, 
- - the one with a medium value of 𝑁 
- - the one with minimum value of 𝑁 
+ - the one with the highest $N$ (number of paths) after the decimation process, 
+ - the one with a medium value of $N$ 
+ - the one with minimum value of $N$ 
 
-It generates also 3 figures for each of the channels:
+In addition to the frequency responses, for each of the channels, the multipath model parameters are provided:
+the attenuation coefficients $a_0$ and $a_1$; the normalization coefficient $A$; the number of dominant paths $N$; the path gains $g_i$; and the path lenghts $d_i$.
+
+It also generates 3 figures for each of the channels:
  - Amplitude of the frequency response
  - Phase of the frequency response
- - the normalized average RMS value of the fitting error
+ - the normalized average RMS value of the fitting error (NRMSE in dB)
+
+📜 These materials are provided for reproducibility of the results in our paper. Readers are encouraged to utilize them under the terms of the journal and this respository's license.
 
 ## Requirements
 

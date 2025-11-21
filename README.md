@@ -2,7 +2,7 @@
 
 # Dataset for the paper “A Close Examination of the Multipath Propagation Stochastic Model for Communications over Power Lines,” 
 
-Submitted to IEEE Transactions on Communications, 2025.
+Published in IEEE Transactions on Communications, 05 june 2025.
 --
 
 Authors: José A. Cortés, Alberto Pittolo, Irene Povedano, Francisco J. Cañete and Andrea M. Tonello. 
@@ -13,7 +13,7 @@ This repository contains datasets and MATLAB scripts to generate some PLC channe
 
 📄 “A Close Examination of the Multipath Propagation Stochastic Model for Communications over Power Lines,” submitted to IEEE Transactions on Communications, 2025.
 
-📌 DOI:
+📌 DOI: https://doi.org/10.1109/TCOMM.2025.3576942
 
 The MATLAB script "load_channels_github.m" provides the frequency responses for three measured channels and their fitting parameters (according to Fig.1 in the paper):
  - the one with the highest $N$ (number of paths) after the decimation process, 

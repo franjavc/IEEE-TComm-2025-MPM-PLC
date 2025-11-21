@@ -11,7 +11,7 @@ Authors: José A. Cortés, Alberto Pittolo, Irene Povedano, Francisco J. Cañete
 
 This repository contains datasets and MATLAB scripts to generate some PLC channel responses and curves in the paper:
 
-📄 “A Close Examination of the Multipath Propagation Stochastic Model for Communications over Power Lines,” submitted to IEEE Transactions on Communications, 2025.
+📄 J. A. Cortés, A. Pittolo, I. Povedano, F. J. Cañete and A. M. Tonello, "A Close Examination of the Multipath Propagation Stochastic Model for Communications Over Power Lines," in _IEEE Transactions on Communications_, vol. 73, no. 11, pp. 10391-10404, Nov. 2025.
 
 📌 DOI: https://doi.org/10.1109/TCOMM.2025.3576942
 
